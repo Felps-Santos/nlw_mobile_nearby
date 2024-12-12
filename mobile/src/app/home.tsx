@@ -50,7 +50,7 @@ export default function Home() {
             <Categories
                 data={categories}
                 onSelect={setCategory}
-                selected="category"
+                selected={category}
             />
 
             <Places
