@@ -1,6 +1,8 @@
 # Dependências
 node_modules/
 
+mobile/
+
 # Arquivos de ambiente
 .env
 *.env*.local
