@@ -1,0 +1,42 @@
+# Dependências
+node_modules/
+
+# Arquivos de ambiente
+.env
+*.env*.local
+
+# Ignorar arquivos de build do TypeScript
+*.tsbuildinfo
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Arquivos nativos
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro (React Native)
+.metro-health-check*
+
+# Logs de debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Prisma (específico para a API)
+api/prisma/dev.db
+api/prisma/migrations/
+
+# Outros
+*.log
