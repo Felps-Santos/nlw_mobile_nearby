@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import { colors, fontFamily } from "@/styles/theme";
-import { styles } from "@gorhom/bottom-sheet/lib/typescript/components/bottomSheetScrollable/BottomSheetFlashList";
 
 export const s = StyleSheet.create({
     container: {

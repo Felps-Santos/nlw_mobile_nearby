@@ -39,6 +39,8 @@ export default function Market() {
         }
     }
 
+    console.log(params.id)
+
     
     async function handleOpenCamera() {
         try{

@@ -81,8 +81,8 @@ export default function Home() {
             initialRegion={{
                 latitude: currentLocation.latitude,
                 longitude: currentLocation.longitude,
-                latitudeDelta: 0.01,
-                longitudeDelta: 0.01,
+                latitudeDelta: 0.005,
+                longitudeDelta: 0.005
             }}>
                 <Marker 
                     identifier="current"
@@ -105,8 +105,8 @@ export default function Home() {
                         >
                             <Callout onPress={() => router.navigate(`/market/${item.id}`)}>
                                 <View>
-                                    <Text style={{ fontSize: 14, color: colors.gray[600], fontFamily: fontFamily.medium, }}>{item.name}</Text>
-                                    <Text style={{ fontSize: 12, color: colors.gray[600], fontFamily: fontFamily.regular, }}>{item.address}</Text>
+                                    <Text style={{ fontSize: 14, color: colors.gray[600], fontFamily: fontFamily.medium }}>{item.name}</Text>
+                                    <Text style={{ fontSize: 12, color: colors.gray[600], fontFamily: fontFamily.regular }}>{item.address}</Text>
                                 </View>
                             </Callout>
                         </Marker>

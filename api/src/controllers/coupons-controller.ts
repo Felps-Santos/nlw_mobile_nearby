@@ -21,12 +21,12 @@ class CouponsController {
         throw new AppError("Estabelecimento não encontrado!", 404)
       }
 
-      if (market.cupons <= 0) {
+      if (market.coupons <= 0) {
         throw new AppError("Não há cupom disponível no momento!")
       }
 
       await prisma.market.update({
-        data: { cupons: { decrement: 1 } },
+        data: { coupons: { decrement: 1 } },
         where: { id: market_id },
       })
 
@@ -44,4 +44,4 @@ class CouponsController {
   }
 }
 
-export { CouponsController }
+export { CouponsController }
