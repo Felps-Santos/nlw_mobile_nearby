@@ -6,17 +6,27 @@ import { Button } from "@/components/button";
 import { colors } from "@/styles/colors";
 
 type Props = {
-    uri: string
-}
+  uri: string;
+};
 
 export function Cover({ uri }: Props) {
-    return (
+  return (
     <ImageBackground source={{ uri }} style={s.container}>
-        <View style={s.header}>
-            <Button style={{ width: 40, height: 40 }} onPress={() => router.back()}>
-                <Button.Icon icon={IconArrowLeft}/>
-            </Button>
-        </View>
+      <View style={s.header}>
+        <Button
+          style={{
+            width: 40,
+            height: 40,
+            backgroundColor: colors.green.base,
+            borderRadius: 10,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          onPress={() => router.back()}
+        >
+          <Button.Icon icon={IconArrowLeft} />
+        </Button>
+      </View>
     </ImageBackground>
-    )
+  );
 }
